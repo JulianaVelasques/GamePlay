@@ -48,7 +48,7 @@ export function Home() {
         <FlatList
           data={appointments}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <Text>{item.guild.name}</Text>}
+          // renderItem={({ item }) => <Text>{item.guild.name}</Text>}
         />
       </View>
     </View>
