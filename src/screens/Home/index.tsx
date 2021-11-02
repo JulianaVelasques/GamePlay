@@ -6,6 +6,7 @@ import { CategorySelect } from '../../components/CategorySelect';
 import { ButtonAdd } from '../../components/ButtonAdd';
 import { Profile } from '../../components/Profile';
 import { ListHeader } from '../../components/ListHeader';
+import { Appointments } from '../../components/Appointment';
 
 //Estilo
 import { styles } from './styles';
@@ -48,7 +49,7 @@ export function Home() {
         <FlatList
           data={appointments}
           keyExtractor={(item) => item.id}
-          // renderItem={({ item }) => <Text>{item.guild.name}</Text>}
+          renderItem={({ item }) => <Appointments data={item} />}
         />
       </View>
     </View>
